@@ -1,22 +1,50 @@
-//write vowel-consonant function
+
 //check if cx[i] is a vowel and add it to another variable
 
 // italian vowels (a,e,i,o,u,)
 
 //alert("debug is working");
 
+//letter checking function
 
-function isVowel(c) {
-    vowels="aeiou";
+function isVowel(s) {
+   let vowels="aeiouAEIOU";
+
     for (i=0; i<=vowels.length; i++){
-        if (s==vowels[i]){
+
+       // console.log(vowels[i]);  //loop check
+
+        if (s==vowels[i])
+        {amon.local
             return true;
-        } else {
-            return false;
-        }
+        } 
     }
-    
+
+    return false;        
 }
+
+//consontant collector function
+
+function collector (word){
+
+     consts=[];
+
+    for (i=0; i<word.length; i++){
+
+        if((isVowel(word[i]))==false)
+            {
+                consts.push(word[i]);
+            }
+    }
+    return consts.toString();
+
+}
+
+
+console.log("Running till here");
+
+
+
 /* vowel teller interface
 
 if (isVowel(s)==true){
@@ -29,13 +57,8 @@ if (isVowel(s)==true){
 
 
 
-x = prompt("Enter Surname");
-alert(x);
+//x = prompt("Enter Surname");
+//alert(x);
 
-for (i=0; i<x.length; i++){
-    if(isVowel(x[i])==false){
-        var cx[i]=x[i];
-    }
-}
 
-alert("cx is " + cx);
+//alert("cx is " + cx); 
